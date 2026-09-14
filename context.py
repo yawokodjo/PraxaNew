@@ -111,19 +111,19 @@ if __name__ == "__main__":
 #    )
 #    download_context_data(pdfs)
 #    context_data = load_context_data()
-#    chunks = chunk_context_data(context_data)
+    chunks = chunk_context_data(context_data)
 #    embedding_model = get_embedding_model()
 #    vector_store = create_vector_store(chunks, embedding_model)
 
 #    for page in context_data:
 #        print(page)
 
-#    for num, chunk in enumerate(chunks):
-#        print("-----")
-#        print(f"Chunk {num}:")
-#        print(f"Length: {len(chunk.page_content)}")
-#        print(f"Metadata: {chunk.metadata}")
-#        print(f"Content: {chunk.page_content}")
+    for num, chunk in enumerate(chunks):
+        print("-----")
+        print(f"Chunk {num}:")
+        print(f"Length: {len(chunk.page_content)}")
+        print(f"Metadata: {chunk.metadata}")
+        print(f"Content: {chunk.page_content}")
 
 #    embedding = embedding_model.embed_query("This is a test sentence.")
 #    print(f"Embedding length: {len(embedding)}")
