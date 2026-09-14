@@ -118,12 +118,12 @@ if __name__ == "__main__":
 #    for page in context_data:
 #        print(page)
 
-    for num, chunk in enumerate(chunks):
-        print("-----")
-        print(f"Chunk {num}:")
-        print(f"Length: {len(chunk.page_content)}")
-        print(f"Metadata: {chunk.metadata}")
-        print(f"Content: {chunk.page_content}")
+#    for num, chunk in enumerate(chunks):
+#        print("-----")
+#        print(f"Chunk {num}:")
+#        print(f"Length: {len(chunk.page_content)}")
+#        print(f"Metadata: {chunk.metadata}")
+#        print(f"Content: {chunk.page_content}")
 
 #    embedding = embedding_model.embed_query("This is a test sentence.")
 #    print(f"Embedding length: {len(embedding)}")
