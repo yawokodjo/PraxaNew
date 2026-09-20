@@ -2,7 +2,7 @@ from langchain_community.chat_models import ChatOpenAI
 from typing import Optional, Any
 import os
 
-os.environ["OPENROUTER_API_KEY"] = "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"
+# os.environ["OPENROUTER_API_KEY"] = "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"
 
 class ChatModel(ChatOpenAI):
     """
