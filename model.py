@@ -2,7 +2,7 @@ from langchain_community.chat_models import ChatOpenAI
 from typing import Optional, Any
 import os
 
-os.environ["OPENROUTER_API_KEY"] = "<your key here>"
+os.environ["OPENROUTER_API_KEY"] = "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"
 
 class ChatModel(ChatOpenAI):
     """
@@ -38,9 +38,9 @@ def get_model(model_name: str = "google/gemma-4-31b-it:free") -> ChatModel:
     )
 
 if __name__ == "__main__":
-# when run as a script, run some tests to demonstrate capabilities
-#    model = get_model()
-#    from langchain_core.messages import HumanMessage, SystemMessage
+    when run as a script, run some tests to demonstrate capabilities
+    model = get_model()
+ from langchain_core.messages import HumanMessage, SystemMessage
 #    from langchain.prompts import ChatPromptTemplate
 
 #    prompt_template = ChatPromptTemplate([
@@ -48,20 +48,20 @@ if __name__ == "__main__":
 #        ("human", "What is {playwright}'s most recent play?")
 #    ])
 
-#    response = model.invoke(
-#        [SystemMessage("You are a helpful assistant."),
-#         HumanMessage("What are some plays by Tawfiq al-Hakim?")])
-#    print(response.content)
-#    print("----------")
-#    response = model.invoke(
-#        [SystemMessage("You are a helpful assistant."),
-#         HumanMessage("What is Ryan Calais Camerons's most recent play?")])
-#    print(response.content)
-#    print("----------")
-#    response = model.invoke(
-#        [SystemMessage("You are a helpful assistant."),
-#         HumanMessage("What Broadway shows have more than 10,000 performances?")])
-#    print(response.content)
+   response = model.invoke(
+       [SystemMessage("You are a helpful assistant."),
+        HumanMessage("What are some plays by Tawfiq al-Hakim?")])
+   print(response.content)
+    print("----------")
+    response = model.invoke(
+        [SystemMessage("You are a helpful assistant."),
+         HumanMessage("What is Ryan Calais Camerons's most recent play?")])
+    print(response.content)
+   print("----------")
+    response = model.invoke(
+        [SystemMessage("You are a helpful assistant."),
+        HumanMessage("What Broadway shows have more than 10,000 performances?")])
+    print(response.content)
 
 #    print(prompt_template.invoke({"playwright": "Ryan Calais Cameron"}))
 #    response = model.invoke(prompt_template.invoke({"playwright": "Ryan Calais Cameron"}))
